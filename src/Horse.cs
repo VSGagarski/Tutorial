@@ -1,10 +1,15 @@
 namespace TutorialCSharp
 {
-    public class Horse
+    public class Horse : IMoveable
     {
-       public void Move()
-       {
-           System.Console.WriteLine("Ride horse!");
-       }
+
+        public string Name { get; set; }
+
+        public string NameVehicle => Name;
+
+        public void Move()
+        {
+            System.Console.WriteLine($"Ride on {Name}");
+        }
     }
 }

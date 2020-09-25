@@ -1,6 +1,6 @@
 namespace TutorialCSharp
 {
-    public abstract class Vehicle
+    public abstract class Vehicle : IMoveable
     {
 
         public Vehicle(string name)
@@ -9,8 +9,10 @@ namespace TutorialCSharp
             // EngineBase = new Engine();
         }
 
-        
+
         internal readonly string _name;
+
+        public string NameVehicle => _name;
 
         public void Init()
         {

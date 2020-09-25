@@ -1,15 +1,12 @@
 namespace TutorialCSharp
 {
-    class AirPlane : Vehicle
+    class AirPlane : IMoveable
     {
-        public AirPlane(string name) : base(name)
-        {
+        public string NameVehicle => "Su31";
 
-        }
-
-        public override void Move()
+        public void Move()
         {
-            System.Console.WriteLine($"Airplane {_name} fly!");
+            System.Console.WriteLine($"Fly on {NameVehicle}");
         }
     }
 }
