@@ -2,9 +2,9 @@ namespace TutorialCSharp
 {
     class Man
     {
-        public void MoveFromAtoB(IMoveable vehicle)
+        public void MoveFromAtoB(IMoveable moveable)
         {
-            vehicle.Move();
+            moveable.Move();
             // System.Console.WriteLine($"Ride on {vehicle.NameVehicle}");
         }
     }
